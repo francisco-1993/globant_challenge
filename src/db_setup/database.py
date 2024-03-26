@@ -3,13 +3,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import os
 
-# url_object = URL.create(
-#     "mysql+pymysql",
-#     username="root",
-#     password="mypass",  
-#     host="localhost",
-#     database="sandbox001",
-# )
 
 SQLALCHEMY_DATABASE_URL = os.environ['SQLALCHEMY_DATABASE_URL'] 
 
