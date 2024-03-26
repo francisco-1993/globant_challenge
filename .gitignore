@@ -1,0 +1,16 @@
+# Ignore virtual environment directory
+venv*/
+
+# Ignore .env files
+*.env
+
+# Python compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Python cache
+*.pyc
+*.pyo
+/.pytest_cache/
+/.mypy_cache/
