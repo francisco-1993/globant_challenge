@@ -65,15 +65,17 @@ The modularity of the solution allow to answer all the questions with differents
 <ol> 
 <li>
     Create a .env file in the root directory, and fill the following env variables
+
     ```
     POSTGRES_PASSWORD=
     POSTGRES_DB=
     POSTGRES_USER=
     SQLALCHEMY_DATABASE_URL=postgresql://POSTGRES_USER:POSTGRES_PASSWORD@SERVICE_DB/POSTGRES_DB
-    ```
+    
     SERVICE_DB: is the name of the service given to the container associated with the database in compose.yml
 
     note: this is configured to work with postgres, if you require another relational database engine, must change the env variables accordingly, also must change the db service in the compose.yml file
+    ```
 </li>
 <li>
 From the root directory run (--build is optional after, an should be used only if you make changes and you want to see them)
