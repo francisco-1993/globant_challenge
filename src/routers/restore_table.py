@@ -47,6 +47,8 @@ def restore_table(table_name: str, db: Session = Depends(get_db), ):
             if batch:
                 db.bulk_insert_mappings(table_name, batch)
                 db.commit()
+            
+            logger.error(f'Error creating table backup: {str(e)}')
 
         # finally:
         #     bulk_session.close()

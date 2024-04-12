@@ -23,6 +23,11 @@ services:
     ports:
       - 8000:8000
     environment:
+      DB_USER: ${DB_USER}
+      DB_PASS: ${DB_PASS}
+      DB_NAME: ${DB_NAME}
+      INSTANCE_CONNECTION_NAME: ${INSTANCE_CONNECTION_NAME}
+      GOOGLE_APPLICATION_CREDENTIALS: ${GOOGLE_APPLICATION_CREDENTIALS}
       SQLALCHEMY_DATABASE_URL: ${SQLALCHEMY_DATABASE_URL}
       DATA_DIR: /app/data
       LOGS_DIR: /app/logs
@@ -31,3 +36,4 @@ services:
       - ./logs:/app/logs
       - ./backups:/app/backups
       - ./data:/app/data
+      - ./keys:/app/keys

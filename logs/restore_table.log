@@ -1,0 +1,16 @@
+2024-03-26 00:57:09,766 - ERROR - Error restoring table: (pymysql.err.OperationalError) (1701, 'Cannot truncate a table referenced in a foreign key constraint (`sandbox001`.`hired_employees`, CONSTRAINT `hired_employees_ibfk_2`)')
+[SQL: TRUNCATE TABLE jobs]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-03-26 01:10:02,596 - ERROR - Error restoring table: (pymysql.err.OperationalError) (1701, 'Cannot truncate a table referenced in a foreign key constraint (`sandbox001`.`hired_employees`, CONSTRAINT `hired_employees_ibfk_2`)')
+[SQL: TRUNCATE TABLE jobs]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-03-26 01:11:20,334 - ERROR - Error restoring table: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE jobs WHERE TRUE' at line 1")
+[SQL: DELETE TABLE jobs WHERE TRUE]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-03-26 01:14:02,988 - ERROR - Error restoring table: 
+2024-03-26 01:21:38,595 - ERROR - Error restoring table: 
+2024-03-26 01:30:23,059 - ERROR - Error restoring table: 404: Backup file for table 'jobsss' does not exist
+2024-03-26 01:30:41,202 - ERROR - Error restoring table: 
+2024-03-26 01:30:49,870 - ERROR - Error restoring table: 
+2024-03-26 15:52:17,756 - ERROR - Error restoring table: 
+2024-03-26 18:25:31,395 - ERROR - Error restoring table: 

@@ -16,7 +16,7 @@ def configure_api_logging(api_name: str, append_logs:bool = False):
     log_file = os.path.join(log_dir, f'{api_name}.log')
     
     api_logger = logging.getLogger(api_name)
-    api_logger.setLevel(logging.ERROR)
+    api_logger.setLevel(logging.WARNING)
     api_logger.propagate = False
     
     if append_logs:
